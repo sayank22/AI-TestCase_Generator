@@ -11,9 +11,9 @@
 
 ---
 
-# Dropbox Brand Animation Demo
+# AI Test Case Generator
 
-Live Demo: [https://testcase-generator-sayan-kundu.vercel.app/](https://testcase-generator-sayan-kundu.vercel.app/)
+Live Link: [https://testcase-generator-sayan-kundu.vercel.app/](https://testcase-generator-sayan-kundu.vercel.app/)
 
 ---
 
@@ -75,7 +75,7 @@ Axios for GitHub + AI API integration
 ## 🌐 Live Links
 
 **🔗 Frontend: https://testcase-generator-sayan-kundu.vercel.app**
-**🔗 Backend API: https://jivaka-backend.onrender.com**
+**🔗 Backend API: https://testcase-generator-ahgm.onrender.com**
 
 ---
 
@@ -84,7 +84,7 @@ Axios for GitHub + AI API integration
 
 # 1. Clone the repo
    ```bash
-   git clone https://github.com/sayank22/Jivaka.git
+   git clone https://github.com/sayank22/AI-TestCase_Generator
    ```
 
 # 2. Backend Setup

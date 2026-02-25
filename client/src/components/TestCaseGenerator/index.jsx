@@ -1,5 +1,4 @@
 import React from 'react';
-import { Github } from 'lucide-react';
 import ProgressSteps from './ProgressSteps';
 import AuthSection from './AuthSection';
 import RepositoryList from './RepositoryList';
@@ -42,9 +41,7 @@ const TestCaseGenerator = () => {
             
             {/* Logo + Title */}
             <div className="flex items-center gap-3">
-              <div className="p-3 bg-blue-600 rounded-xl shadow-sm">
-                <Github className="w-6 h-6 text-white" />
-              </div>
+              <img src="/favicon.png" alt="logo" className="w-6 h-6" />
               <div>
                 <h1 className="text-xl md:text-2xl font-bold text-gray-900">
                   Test Case Generator
