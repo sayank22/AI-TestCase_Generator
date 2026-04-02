@@ -29,6 +29,7 @@ const TestCaseGenerator = () => {
     generateTestCode,
     createPullRequest,
     startGitHubOAuth,
+    logout,
   } = useTestCaseFlow();
 
   return (
@@ -56,6 +57,7 @@ const TestCaseGenerator = () => {
             <AuthSection 
               authenticated={authenticated}
               onStartOAuth={startGitHubOAuth}
+              onLogout={logout}
             />
           </div>
         </div>

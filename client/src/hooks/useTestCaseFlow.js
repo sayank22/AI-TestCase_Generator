@@ -68,7 +68,24 @@ export const useTestCaseFlow = () => {
     window.location.href = `${backendBase}/api/auth/github/start`;
   };
 
-  // ✅ Enhanced validation for generateTestSummaries
+const logout = () => {
+  ApiService.removeAuthHeader();
+  setRepositories([]);
+  setSelectedRepo(null);
+    setFiles([]);
+    setSelectedFiles([]);
+    setTestSummaries([]);
+    setSelectedSummary(null);
+    setGeneratedCode('');
+    setLoading(false);
+    setAuthenticated(false);
+    setCurrentStep(1);
+    setError('');
+
+    const cleanUrl = window.location.origin + window.location.pathname;
+    window.history.replaceState({}, document.title, cleanUrl);
+  };
+    // ✅ Enhanced validation for generateTestSummaries
   const generateTestSummaries = async () => {
     if (selectedFiles.length === 0) {
       setError('Please select at least one file');
@@ -230,6 +247,7 @@ export const useTestCaseFlow = () => {
     generateTestCode,
     createPullRequest,
     startGitHubOAuth,
+    logout,
     setError
   };
 };
